@@ -204,7 +204,7 @@ function setupFunButtons() {
   if (surpriseBtn) {
     surpriseBtn.addEventListener("click", () => {
       burstConfetti(80);
-      showToast(`${girlfriendName}, aapki smile ka order place kar diya gaya hai `);
+      showToast(`${girlfriendName}, momos order kru kya baby`);
     });
   }
 
