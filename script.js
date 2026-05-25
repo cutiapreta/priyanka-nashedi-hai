@@ -1,6 +1,6 @@
 const DEFAULTS = {
   girlfriendName: "Priyanka",
-  fromName: "Tumhara"
+  fromName: "me"
 };
 
 const params = new URLSearchParams(window.location.search);
