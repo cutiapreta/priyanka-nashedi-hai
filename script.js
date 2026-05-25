@@ -10,7 +10,7 @@ const fromName = sanitize(params.get("from")) || DEFAULTS.fromName;
 const teaseLines = [
   "No wala button bas sharma raha hai 😌",
   "Arre arre... itni jaldi no nahi 😏",
-  "Ye button tumse door rehna chahta hai 💨",
+  "Ye button aapse door rehna chahta hai 💨",
   "Lagta hai answer already Yes hai 😚",
   "No option unavailable due to excessive cuteness 💗",
   "Button bol raha hai: mujhe mat pakdo 🙈"
@@ -162,13 +162,13 @@ function setupMoodRange() {
   const update = () => {
     const value = Number(range.value);
     if (value <= 20) {
-      moodText.textContent = "Aisa thodi hota hai 😌 isse thoda aur badhao.";
+      moodText.textContent = "Aisa thodi hota hai , isse thoda aur badhao.";
     } else if (value <= 50) {
-      moodText.textContent = "Theek hai, ye bhi cute hai... par aur better ho sakta hai 🌸";
+      moodText.textContent = "Theek hai, ye bhi theek hai... par aur better ho sakta hai 🌸";
     } else if (value <= 80) {
-      moodText.textContent = "Haan ab baat bani 💗 ab smile bhi banti hai.";
+      moodText.textContent = "Haan ab baat bani 💗 ab smile bhi banti hai";
     } else {
-      moodText.textContent = "Bas! yahi wala level perfect hai — full pyaar, full cute mode 💞";
+      moodText.textContent = "Bas! yahi wala level perfect hai  💞";
     }
   };
 
@@ -204,7 +204,7 @@ function setupFunButtons() {
   if (surpriseBtn) {
     surpriseBtn.addEventListener("click", () => {
       burstConfetti(80);
-      showToast(`${girlfriendName}, tumhari smile ka order place kar diya gaya hai 😚`);
+      showToast(`${girlfriendName}, aapki smile ka order place kar diya gaya hai `);
     });
   }
 
